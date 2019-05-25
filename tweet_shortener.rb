@@ -32,10 +32,11 @@ def bulk_tweet_shortener(tweets)
   end
 end
 
-def selective_tweet_shortener(tweet_one_length)
-    if tweet_one_length > 140
-       puts tweet_one_short
+def selective_tweet_shortener(tweet)
+    if tweet > 140
+       puts word_substituter(tweet)
     else
       tweets
     end
   end
+
